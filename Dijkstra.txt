@@ -1,0 +1,4 @@
+MATCH (m1:Municipio {name:'Telde'})
+MATCH (m2:Municipio {name:'Valleseco'})
+CALL apoc.algo.dijkstra(m1, m2, 'CONNECTION', 'distancia') YIELD path, weight
+RETURN path, weight

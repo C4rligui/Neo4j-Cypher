@@ -1,0 +1,8 @@
+CALL gds.graph.create(
+  'distancia_municipios',
+  'Municipio',
+  'CONNECTION',
+  {
+    relationshipProperties: 'distancia'
+  }
+)
